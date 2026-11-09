@@ -1,0 +1,1147 @@
+[
+{
+"name": "Ab Mat Sit Up",
+"group": "Abs",
+"timed": false
+},
+{
+"name": "Ab Wheel Rollout",
+"group": "Abs",
+"timed": false
+},
+{
+"name": "Back Extension",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Barbell Bench Press",
+"group": "Chest",
+"timed": false
+},
+{
+"name": "Barbell Bench Press – Close Grip",
+"group": "Triceps",
+"timed": false
+},
+{
+"name": "Barbell Bent Over Row",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Barbell Bicep Curl",
+"group": "Biceps",
+"timed": false
+},
+{
+"name": "Barbell Bicep Curl – Reverse Grip",
+"group": "Biceps",
+"timed": false
+},
+{
+"name": "Barbell Bulgarian Split Squat",
+"group": "Quads",
+"timed": false
+},
+{
+"name": "Barbell Deadlift",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Barbell Decline Bench Press",
+"group": "Chest",
+"timed": false
+},
+{
+"name": "Barbell Delt Raise",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Barbell Front Raise",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Barbell Hip Thrust",
+"group": "Glutes",
+"timed": false
+},
+{
+"name": "Barbell Incline Bench Press",
+"group": "Chest",
+"timed": false
+},
+{
+"name": "Barbell Lunge",
+"group": "Quads",
+"timed": false
+},
+{
+"name": "Barbell Overhead Press",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Barbell Overhead Tricep Extension",
+"group": "Triceps",
+"timed": false
+},
+{
+"name": "Barbell Overhead Tricep Extension – Seated",
+"group": "Triceps",
+"timed": false
+},
+{
+"name": "Barbell Pendlay Row",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Barbell Preacher Curl",
+"group": "Biceps",
+"timed": false
+},
+{
+"name": "Barbell Romanian Deadlift",
+"group": "Hamstrings",
+"timed": false
+},
+{
+"name": "Barbell Seated Wrist Curl",
+"group": "Forearms",
+"timed": false
+},
+{
+"name": "Barbell Shoulder Press",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Barbell Shrug",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Barbell Split Squat",
+"group": "Quads",
+"timed": false
+},
+{
+"name": "Barbell Squat",
+"group": "Quads",
+"timed": false
+},
+{
+"name": "Barbell Standing Calf Raise on Floor",
+"group": "Calves",
+"timed": false
+},
+{
+"name": "Barbell Standing Military Press",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Bayesian Curl- Single Arm",
+"group": "Biceps",
+"timed": false
+},
+{
+"name": "Bench Dip",
+"group": "Triceps",
+"timed": false
+},
+{
+"name": "Bicycle Crunch",
+"group": "Abs",
+"timed": false
+},
+{
+"name": "Cable Bent Over Reverse Fly – Low Pulley",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Cable Bicep Curl",
+"group": "Biceps",
+"timed": false
+},
+{
+"name": "Cable Bicep Curl – Reverse Grip",
+"group": "Biceps",
+"timed": false
+},
+{
+"name": "Cable Bicep Curl – Rope",
+"group": "Biceps",
+"timed": false
+},
+{
+"name": "Cable Chest Fly",
+"group": "Chest",
+"timed": false
+},
+{
+"name": "Cable Chest Fly – High Pulley",
+"group": "Chest",
+"timed": false
+},
+{
+"name": "Cable Chest Fly – Low Pulley",
+"group": "Chest",
+"timed": false
+},
+{
+"name": "Cable Crossover",
+"group": "Chest",
+"timed": false
+},
+{
+"name": "Cable Crunch",
+"group": "Abs",
+"timed": false
+},
+{
+"name": "Cable Glute Kickback",
+"group": "Glutes",
+"timed": false
+},
+{
+"name": "Cable Hammer Curl",
+"group": "Biceps",
+"timed": false
+},
+{
+"name": "Cable Kneeling Crunch",
+"group": "Abs",
+"timed": false
+},
+{
+"name": "Cable Lateral Raise",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Cable Overhead Tricep Extension",
+"group": "Triceps",
+"timed": false
+},
+{
+"name": "Cable Preacher Curl",
+"group": "Biceps",
+"timed": false
+},
+{
+"name": "Cable Pull Through",
+"group": "Glutes",
+"timed": false
+},
+{
+"name": "Cable Pulldown",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Cable Pulldown – Reverse Grip",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Cable Pulldown – V-Bar",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Cable Pulldown – Wide Grip",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Cable Reverse Fly",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Cable Rope Face Pull",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Cable Rope Overhead Tricep Extension",
+"group": "Triceps",
+"timed": false
+},
+{
+"name": "Cable Rope Pushaway",
+"group": "Triceps",
+"timed": false
+},
+{
+"name": "Cable Seated Row",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Cable Seated Row – V-Bar",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Cable Seated Row – Wide Grip",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Cable Seated Single Arm Row",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Cable Shoulder External Rotation",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Cable Shoulder Internal Rotation",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Cable Single Arm Front Raise",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Cable Single Arm Half Kneeling Row",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Cable Single Arm Lat Pulldown",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Cable Single Arm Lateral Raise",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Cable Straight Arm Pushdown",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Cable Straight Arm Pushdown – Rope",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Cable Tricep Pushdown",
+"group": "Triceps",
+"timed": false
+},
+{
+"name": "Cable Tricep Pushdown – Rope",
+"group": "Triceps",
+"timed": false
+},
+{
+"name": "Cable Woodchop",
+"group": "Abs",
+"timed": false
+},
+{
+"name": "Calf Press on Leg Press",
+"group": "Calves",
+"timed": false
+},
+{
+"name": "Captain’s Chair Leg Raise",
+"group": "Abs",
+"timed": false
+},
+{
+"name": "Chest Dip",
+"group": "Chest",
+"timed": false
+},
+{
+"name": "Chin Up",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Concentration Curl",
+"group": "Biceps",
+"timed": false
+},
+{
+"name": "Crunch",
+"group": "Abs",
+"timed": false
+},
+{
+"name": "Dead Bug",
+"group": "Abs",
+"timed": false
+},
+{
+"name": "Dead Hang",
+"group": "Forearms",
+"timed": true
+},
+{
+"name": "Decline Crunch",
+"group": "Abs",
+"timed": false
+},
+{
+"name": "Decline Twisting Sit Up",
+"group": "Abs",
+"timed": false
+},
+{
+"name": "Decline Weighted Crunch",
+"group": "Abs",
+"timed": false
+},
+{
+"name": "Diamond Push Up",
+"group": "Triceps",
+"timed": false
+},
+{
+"name": "Donkey Calf Raise",
+"group": "Calves",
+"timed": false
+},
+{
+"name": "Dragon Flag",
+"group": "Abs",
+"timed": false
+},
+{
+"name": "Dumbbell Arnold Press",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Dumbbell Bench Press",
+"group": "Chest",
+"timed": false
+},
+{
+"name": "Dumbbell Bicep Curl",
+"group": "Biceps",
+"timed": false
+},
+{
+"name": "Dumbbell Bicep Curl – Neutral Grip",
+"group": "Biceps",
+"timed": false
+},
+{
+"name": "Dumbbell Bulgarian Split Squat",
+"group": "Quads",
+"timed": false
+},
+{
+"name": "Dumbbell Calf Raise",
+"group": "Calves",
+"timed": false
+},
+{
+"name": "Dumbbell Cross Body Hammer Curl",
+"group": "Biceps",
+"timed": false
+},
+{
+"name": "Dumbbell Decline Bench Press",
+"group": "Chest",
+"timed": false
+},
+{
+"name": "Dumbbell Fly",
+"group": "Chest",
+"timed": false
+},
+{
+"name": "Dumbbell Front Raise",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Dumbbell Hammer Curl",
+"group": "Biceps",
+"timed": false
+},
+{
+"name": "Dumbbell Incline Bench Press",
+"group": "Chest",
+"timed": false
+},
+{
+"name": "Dumbbell Incline Curl",
+"group": "Biceps",
+"timed": false
+},
+{
+"name": "Dumbbell Incline Curl – Neutral Grip",
+"group": "Biceps",
+"timed": false
+},
+{
+"name": "Dumbbell Incline Fly",
+"group": "Chest",
+"timed": false
+},
+{
+"name": "Dumbbell Lunge",
+"group": "Quads",
+"timed": false
+},
+{
+"name": "Dumbbell Preacher Curl",
+"group": "Biceps",
+"timed": false
+},
+{
+"name": "Dumbbell Pullover",
+"group": "Chest",
+"timed": false
+},
+{
+"name": "Dumbbell Rear Delt Fly",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Dumbbell Romanian Deadlift",
+"group": "Hamstrings",
+"timed": false
+},
+{
+"name": "Dumbbell Row",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Dumbbell Seated Bent Over Reverse Fly",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Dumbbell Seated Lateral Raise",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Dumbbell Seated Overhead Press",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Dumbbell Seated Wrist Curl",
+"group": "Forearms",
+"timed": false
+},
+{
+"name": "Dumbbell Seated Wrist Curl – Reverse Grip",
+"group": "Forearms",
+"timed": false
+},
+{
+"name": "Dumbbell Shoulder Press",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Dumbbell Shrug",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Dumbbell Single Arm Row",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Dumbbell Single Arm Tricep Extension",
+"group": "Triceps",
+"timed": false
+},
+{
+"name": "Dumbbell Standing Lateral Raise",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Dumbbell Stiff Leg Deadlift",
+"group": "Hamstrings",
+"timed": false
+},
+{
+"name": "Dumbbell Tricep Extension",
+"group": "Triceps",
+"timed": false
+},
+{
+"name": "Dumbbell Wrist Curl Over Bench",
+"group": "Forearms",
+"timed": false
+},
+{
+"name": "Dumbbell Wrist Curl Over Bench – Reverse Grip",
+"group": "Forearms",
+"timed": false
+},
+{
+"name": "EZ Bar Wrist Curls (Flexors)",
+"group": "Forearms",
+"timed": false
+},
+{
+"name": "EZ-Bar Bicep Curl",
+"group": "Biceps",
+"timed": false
+},
+{
+"name": "EZ-Bar Bicep Curl – Reverse Grip",
+"group": "Biceps",
+"timed": false
+},
+{
+"name": "EZ-Bar Preacher Curl",
+"group": "Biceps",
+"timed": false
+},
+{
+"name": "Elliptical Machine",
+"group": "Cardio",
+"timed": true
+},
+{
+"name": "Farmers Carry",
+"group": "Forearms",
+"timed": false
+},
+{
+"name": "Flexor Curls (Behind Back)",
+"group": "Forearms",
+"timed": false
+},
+{
+"name": "Front Squat",
+"group": "Quads",
+"timed": false
+},
+{
+"name": "Glute Bridge",
+"group": "Glutes",
+"timed": false
+},
+{
+"name": "Glute Ham Raise",
+"group": "Hamstrings",
+"timed": false
+},
+{
+"name": "Goblet Squat",
+"group": "Quads",
+"timed": false
+},
+{
+"name": "Good Morning",
+"group": "Hamstrings",
+"timed": false
+},
+{
+"name": "Hack Squat",
+"group": "Quads",
+"timed": false
+},
+{
+"name": "Hang Clean",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Hanging Knee Raise",
+"group": "Abs",
+"timed": false
+},
+{
+"name": "Hanging Straight Leg Raise",
+"group": "Abs",
+"timed": false
+},
+{
+"name": "Hiking",
+"group": "Cardio",
+"timed": true
+},
+{
+"name": "Hollow Hold",
+"group": "Abs",
+"timed": true
+},
+{
+"name": "Incline Push Up",
+"group": "Chest",
+"timed": false
+},
+{
+"name": "Inverted Row",
+"group": "Back",
+"timed": false
+},
+{
+"name": "JM Press",
+"group": "Triceps",
+"timed": false
+},
+{
+"name": "Jump Rope",
+"group": "Cardio",
+"timed": true
+},
+{
+"name": "Kickback Tricep Extension",
+"group": "Triceps",
+"timed": false
+},
+{
+"name": "Landmine Press",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Lat Pulldown",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Leg Press",
+"group": "Quads",
+"timed": false
+},
+{
+"name": "Leverage Incline Chest Press",
+"group": "Chest",
+"timed": false
+},
+{
+"name": "Leverage Military Press",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Leverage Shrug",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Leverage Squat",
+"group": "Quads",
+"timed": false
+},
+{
+"name": "Machine Bicep Curl",
+"group": "Biceps",
+"timed": false
+},
+{
+"name": "Machine Crunch",
+"group": "Abs",
+"timed": false
+},
+{
+"name": "Machine Deltoid Raise",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Machine Dip",
+"group": "Triceps",
+"timed": false
+},
+{
+"name": "Machine Fly",
+"group": "Chest",
+"timed": false
+},
+{
+"name": "Machine Hip Abduction",
+"group": "Glutes",
+"timed": false
+},
+{
+"name": "Machine Hip Adduction",
+"group": "Glutes",
+"timed": false
+},
+{
+"name": "Machine Hip Thrust",
+"group": "Glutes",
+"timed": false
+},
+{
+"name": "Machine Inner Chest Press",
+"group": "Chest",
+"timed": false
+},
+{
+"name": "Machine Leg Curl",
+"group": "Hamstrings",
+"timed": false
+},
+{
+"name": "Machine Leg Extension",
+"group": "Quads",
+"timed": false
+},
+{
+"name": "Machine Lying Leg Curl",
+"group": "Hamstrings",
+"timed": false
+},
+{
+"name": "Machine Preacher Curl",
+"group": "Biceps",
+"timed": false
+},
+{
+"name": "Machine Reverse Fly",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Machine Row",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Machine Seated Calf Raise",
+"group": "Calves",
+"timed": false
+},
+{
+"name": "Machine Seated Squat",
+"group": "Quads",
+"timed": false
+},
+{
+"name": "Machine Shoulder Press",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Machine Shrug",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Machine Standing Calf Raise",
+"group": "Calves",
+"timed": false
+},
+{
+"name": "Mountain Climber",
+"group": "Abs",
+"timed": true
+},
+{
+"name": "Nordic Curl",
+"group": "Hamstrings",
+"timed": false
+},
+{
+"name": "One Arm Seated Cable Row",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Outdoor Cycling",
+"group": "Cardio",
+"timed": true
+},
+{
+"name": "Overhead Dumbbell Tricep Extension",
+"group": "Triceps",
+"timed": false
+},
+{
+"name": "Pause Squat",
+"group": "Quads",
+"timed": false
+},
+{
+"name": "Pec Deck",
+"group": "Chest",
+"timed": false
+},
+{
+"name": "Plank",
+"group": "Abs",
+"timed": true
+},
+{
+"name": "Pronation Bicep Curls",
+"group": "Biceps",
+"timed": false
+},
+{
+"name": "Pull Up",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Pull Up – Neutral Grip",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Pull Up – Wide Grip",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Push Up",
+"group": "Chest",
+"timed": false
+},
+{
+"name": "Push Up – Close Grip",
+"group": "Triceps",
+"timed": false
+},
+{
+"name": "Rack Pull",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Recumbent Bike",
+"group": "Cardio",
+"timed": true
+},
+{
+"name": "Reverse Crunch",
+"group": "Abs",
+"timed": false
+},
+{
+"name": "Reverse Pec Deck",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Rowing",
+"group": "Cardio",
+"timed": true
+},
+{
+"name": "Rowing Machine",
+"group": "Cardio",
+"timed": true
+},
+{
+"name": "Running",
+"group": "Cardio",
+"timed": true
+},
+{
+"name": "Russian Twist",
+"group": "Abs",
+"timed": false
+},
+{
+"name": "Seal Row",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Seated Leg Curl",
+"group": "Hamstrings",
+"timed": false
+},
+{
+"name": "Shoulder Hearts",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Side Plank",
+"group": "Abs",
+"timed": true
+},
+{
+"name": "Single Arm Cable Pushdowns",
+"group": "Triceps",
+"timed": false
+},
+{
+"name": "Single Leg Extension",
+"group": "Quads",
+"timed": false
+},
+{
+"name": "Single Leg Leg Curl",
+"group": "Hamstrings",
+"timed": false
+},
+{
+"name": "Sissy Squat",
+"group": "Quads",
+"timed": false
+},
+{
+"name": "Sit Up",
+"group": "Abs",
+"timed": false
+},
+{
+"name": "Skull Crushers",
+"group": "Triceps",
+"timed": false
+},
+{
+"name": "Smith Machine Bulgarian Split Squat",
+"group": "Quads",
+"timed": false
+},
+{
+"name": "Smith Machine Incline Bench Press",
+"group": "Chest",
+"timed": false
+},
+{
+"name": "Smith Machine Shrug",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Smith Machine Squat",
+"group": "Quads",
+"timed": false
+},
+{
+"name": "Smith Machine Standing Calf Raise",
+"group": "Calves",
+"timed": false
+},
+{
+"name": "Spider Curl",
+"group": "Biceps",
+"timed": false
+},
+{
+"name": "Stair Climber",
+"group": "Cardio",
+"timed": true
+},
+{
+"name": "Stairmaster",
+"group": "Cardio",
+"timed": true
+},
+{
+"name": "Stairstepper (Use)",
+"group": "Cardio",
+"timed": true
+},
+{
+"name": "Stairway To Seven (Triceps)",
+"group": "Triceps",
+"timed": false
+},
+{
+"name": "Stationary Bike",
+"group": "Cardio",
+"timed": true
+},
+{
+"name": "Step Up",
+"group": "Quads",
+"timed": false
+},
+{
+"name": "Sumo Deadlift",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Swimming",
+"group": "Cardio",
+"timed": true
+},
+{
+"name": "T-Bar Lying Row",
+"group": "Back",
+"timed": false
+},
+{
+"name": "T-Bar Lying Row – Reverse Grip",
+"group": "Back",
+"timed": false
+},
+{
+"name": "T-Bar Row",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Trap Bar Deadlift",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Treadmill",
+"group": "Cardio",
+"timed": true
+},
+{
+"name": "Tricep Dip",
+"group": "Triceps",
+"timed": false
+},
+{
+"name": "Twisting Crunch",
+"group": "Abs",
+"timed": false
+},
+{
+"name": "Upright Row",
+"group": "Shoulders",
+"timed": false
+},
+{
+"name": "Walk",
+"group": "Cardio",
+"timed": true
+},
+{
+"name": "Walking Lunge",
+"group": "Quads",
+"timed": false
+},
+{
+"name": "Wallsit",
+"group": "Quads",
+"timed": true
+},
+{
+"name": "Weighted Lower Back Extension",
+"group": "Back",
+"timed": false
+},
+{
+"name": "Wrist Roller",
+"group": "Forearms",
+"timed": false
+}
+]
