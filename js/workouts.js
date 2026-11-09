@@ -1,7 +1,8 @@
 import { h, clear, num, duration, parseDuration, parseNum, fmtMonth, fmtShort, fmtDate, plural, toLocalInput, fromLocalInput, MUSCLES } from './util.js';
 import { S, sortedWorkouts, createWorkout, removeWorkout, getWorkout, touchWorkout, exerciseGroups, volume,
   lastTime, setSummary, groupOf, getExercise, saveExercise, isTimed } from './store.js';
-import { sheet, confirmDialog, empty, toast } from './ui.js';
+import { sheet, confirmDialog, empty, toast, saveFile } from './ui.js';
+import * as autosave from './autosave.js';
 import { pickExercise } from './picker.js';
 import * as timer from './timer.js';
 
@@ -71,10 +72,22 @@ export function header(title, right, left) {
 }
 
 export function backupNudge() {
-  const last = S.meta.lastBackup;
-  const days = last ? (Date.now() - last) / 86400000 : Infinity;
-  if (days < 14) return null;
-  return h('a', { class: 'nudge', href: '#/data' }, last ? `Last backup ${Math.floor(days)} days ago.` : 'You haven’t backed up yet.', ' Tap to back up your data →');
+  const info = autosave.nudgeInfo();
+  if (!info) return null;
+  const el = h('a', { class: 'nudge', href: '#/data' }, info.text);
+  if (info.kind === 'permission') {
+    el.addEventListener('click', async (e) => {
+      e.preventDefault();
+      if (await autosave.saveNow(true)) { toast('Auto-save resumed'); el.remove(); } else location.hash = '#/data';
+    });
+  } else if (info.kind === 'backup' && navigator.canShare) {
+    el.addEventListener('click', async (e) => {
+      e.preventDefault();
+      await autosave.shareBackup(saveFile);
+      if (!autosave.nudgeInfo()) el.remove();
+    });
+  }
+  return el;
 }
 
 // ---------- editor ----------

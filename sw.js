@@ -1,9 +1,9 @@
 // Cache-first service worker so the app opens offline. Bump VERSION when you change any file.
-const VERSION = 'gymlog-v2';
+const VERSION = 'gymlog-v3';
 const FILES = [
   './', 'index.html', 'manifest.webmanifest', 'css/app.css',
   'js/app.js', 'js/util.js', 'js/db.js', 'js/store.js', 'js/ui.js', 'js/charts.js', 'js/timer.js',
-  'js/picker.js', 'js/workouts.js', 'js/body.js', 'js/photos.js', 'js/progress.js', 'js/data.js',
+  'js/picker.js', 'js/workouts.js', 'js/body.js', 'js/photos.js', 'js/progress.js', 'js/data.js', 'js/autosave.js',
   'data/exercise_library.json',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png',
 ];

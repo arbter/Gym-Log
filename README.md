@@ -20,7 +20,7 @@ It must be served over HTTPS. Easiest is GitHub Pages:
 4. In the app: Data → **Restore from backup…** → choose the file. This loads your Fitness Logbook history.
 
 ## Backups
-iOS can clear a web app's storage if it hasn't been opened for several weeks. Use Data → **Save backup file** now and then (it can include photos) and keep the file in iCloud Drive. The app nudges you after 14 days.
+iOS can clear a web app's storage if it hasn't been opened for several weeks. Use Data → **Save backup file** now and then (it can include photos) and keep the file in iCloud Drive. With Data → Auto-save on Chrome/Edge (Android or a computer), the app keeps a backup file up to date in a folder you choose. Safari on iPhone does not allow that, so the app reminds you to save a backup to Files once you have logged something new and your last backup is 3 days old.
 
 ## Updating the app
 Replace the files in the repo. In `sw.js` change `VERSION` (e.g. gymlog-v2) so phones pick up the new files. Close and reopen the app twice.

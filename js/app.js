@@ -6,6 +6,7 @@ import { renderBody, renderKindHistory } from './body.js';
 import { renderPhotos } from './photos.js';
 import { renderProgress } from './progress.js';
 import { renderData } from './data.js';
+import { initAutosave } from './autosave.js';
 
 const SVG = (d) => `<svg viewBox="0 0 24 24" aria-hidden="true">${d}</svg>`;
 const ICONS = {
@@ -57,6 +58,7 @@ async function start() {
   mountTimer(document.body);
   try {
     await init();
+    await initAutosave();
   } catch (err) {
     console.error(err);
     main.replaceChildren(h('pre', { class: 'error' }, 'Could not start: ' + (err.stack || err)));

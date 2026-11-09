@@ -2,6 +2,10 @@
 const DB_NAME = 'gymlog';
 const VERSION = 1;
 let db;
+const writeListeners = [];
+
+/** Called after every committed write to a data store (writes to 'meta' are ignored). */
+export function onWrite(fn) { writeListeners.push(fn); }
 
 export function open() {
   return new Promise((resolve, reject) => {
@@ -23,7 +27,10 @@ function run(stores, mode, fn) {
   return new Promise((resolve, reject) => {
     const tx = db.transaction(stores, mode);
     let result;
-    tx.oncomplete = () => resolve(result);
+    tx.oncomplete = () => {
+      resolve(result);
+      if (mode === 'readwrite' && [].concat(stores).some((s) => s !== 'meta')) for (const fn of writeListeners) fn();
+    };
     tx.onerror = tx.onabort = () => reject(tx.error);
     result = fn(tx);
   });
