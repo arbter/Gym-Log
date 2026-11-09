@@ -1,7 +1,8 @@
-import { h, clear, fmtDate } from './util.js';
+import { h, clear, fmtDate, fmtDateTime } from './util.js';
 import { S, exportCSVs, exportBackup, importBackup, eraseAll, importLogbookCSV } from './store.js';
 import { confirmDialog, saveFile, toast } from './ui.js';
 import { header } from './workouts.js';
+import * as autosave from './autosave.js';
 
 export function renderData(root) {
   const stamp = new Date().toISOString().slice(0, 10);
@@ -46,6 +47,9 @@ export function renderData(root) {
       h('p', { class: 'sub' }, 'Choose the workouts and/or measurements CSV files from a Fitness Logbook export. Only workouts and measurements that aren’t already here are added, so it’s safe to import the same export twice.'),
       h('button', { class: 'btn', onclick: () => csvInput.click() }, 'Import Fitness Logbook CSV…')),
 
+    h('h3', { class: 'section-title' }, 'Auto-save'),
+    autoSaveCard(root),
+
     h('h3', { class: 'section-title' }, 'Backup'),
     h('div', { class: 'card stack pad' },
       h('p', { class: 'sub' }, last ? `Last backup: ${fmtDate(last)}.` : 'No backup yet.', ' Your data lives only on this phone, and iOS can clear a web app’s storage if you don’t open it for a few weeks. Save a backup to Files or iCloud Drive every so often.'),
@@ -73,4 +77,56 @@ export function renderData(root) {
         toast('All data erased');
         clear(root); renderData(root);
       } }, 'Erase all data'))));
+}
+
+function autoSaveCard(root) {
+  const rerender = () => { clear(root); renderData(root); };
+  const photos = h('label', { class: 'check' },
+    h('input', { type: 'checkbox', checked: autosave.includePhotos(), onchange: (e) => autosave.setIncludePhotos(e.target.checked) }),
+    'Include photos (larger file)');
+
+  if (!autosave.supported) {
+    return h('div', { class: 'card stack pad' },
+      h('p', { class: 'sub' }, 'This browser doesn’t let web apps save to a folder on their own (Safari on iPhone and iPad doesn’t allow it). Instead, Gym Log reminds you on the Workouts screen once you’ve logged something new and your last backup is 3 days old. One tap opens the share sheet: choose Save to Files and pick the same folder (for example a Gym Log folder in iCloud Drive). Files remembers the folder you used last time.'),
+      photos);
+  }
+
+  const st = autosave.getStatus();
+  const card = h('div', { class: 'card stack pad' });
+  const choose = async () => {
+    try {
+      const r = await autosave.chooseFolder({ confirm: (msg) => confirmDialog(msg, { ok: 'Restore' }) });
+      if (r.cancelled) return;
+      toast(r.restored ? `Restored ${r.restored.workouts} workouts. Auto-saving to “${r.folder}”` : `Auto-saving to “${r.folder}”`);
+    } catch (err) { toast(err.message || 'Couldn’t use that folder'); }
+    rerender();
+  };
+
+  if (!autosave.enabled()) {
+    card.append(
+      h('p', { class: 'sub' }, `Pick a folder on this device and Gym Log will keep ${autosave.FILE_NAME} there up to date every time you change something, plus a copy for each of the last 7 days. If the app’s storage is ever cleared, choose the same folder again to get everything back.`),
+      photos,
+      h('button', { class: 'btn primary', onclick: choose }, 'Choose backup folder…'));
+    return card;
+  }
+
+  const line = {
+    saving: 'Saving…',
+    saved: st.lastSaved ? `Saved ${fmtDateTime(st.lastSaved)}` : 'On',
+    'needs-permission': 'Paused: tap Resume to allow saving again',
+    error: `Couldn’t save: ${st.error}`,
+    off: 'On',
+  }[st.status];
+  const unsub = autosave.subscribe(() => { if (!card.isConnected) { unsub(); return; } rerender(); });
+  card.append(
+    h('p', {}, 'Saving to folder “', st.folder, '”'),
+    h('p', { class: 'sub' }, line, '. The file is ', autosave.FILE_NAME, ', with a copy for each of the last 7 days.'),
+    photos,
+    st.status === 'needs-permission' || st.status === 'error'
+      ? h('button', { class: 'btn primary', onclick: async () => { if (await autosave.saveNow(true)) toast('Auto-save resumed'); rerender(); } }, 'Resume auto-save')
+      : h('button', { class: 'btn', onclick: async () => { if (await autosave.saveNow(true)) toast('Saved'); rerender(); } }, 'Save now'),
+    h('div', { class: 'row gap' },
+      h('button', { class: 'btn', onclick: choose }, 'Change folder…'),
+      h('button', { class: 'btn', onclick: async () => { await autosave.turnOff(); toast('Auto-save turned off'); rerender(); } }, 'Turn off')));
+  return card;
 }

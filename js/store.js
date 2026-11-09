@@ -313,19 +313,31 @@ export function exportCSVs() {
 
 const blobToDataURL = (b) => new Promise((res) => { const r = new FileReader(); r.onload = () => res(r.result); r.readAsDataURL(b); });
 const dataURLToBlob = async (u) => (await fetch(u)).blob();
+// Photos rarely change, so their encoded form is kept to make repeated (auto-)backups cheap.
+const dataURLCache = new WeakMap();
+async function cachedDataURL(b) {
+  if (!dataURLCache.has(b)) dataURLCache.set(b, await blobToDataURL(b));
+  return dataURLCache.get(b);
+}
 
-export async function exportBackup(includePhotos) {
+/** The backup file's contents. Doesn't touch `lastBackup`. */
+export async function buildBackup(includePhotos) {
   const out = {
     app: 'gymlog', version: 1, exportedAt: Date.now(),
     workouts: S.workouts, measurements: S.measurements, exercises: S.exercises, photos: [],
   };
   if (includePhotos) {
     for (const p of S.photos) {
-      out.photos.push({ date: p.date, pose: p.pose, note: p.note, full: await blobToDataURL(p.full), thumb: await blobToDataURL(p.thumb) });
+      out.photos.push({ date: p.date, pose: p.pose, note: p.note, full: await cachedDataURL(p.full), thumb: await cachedDataURL(p.thumb) });
     }
   }
-  await setMeta('lastBackup', Date.now());
   return new Blob([JSON.stringify(out)], { type: 'application/json' });
+}
+
+export async function exportBackup(includePhotos) {
+  const blob = await buildBackup(includePhotos);
+  await setMeta('lastBackup', Date.now());
+  return blob;
 }
 
 /** Replaces workouts, measurements and exercises (and photos, if the backup includes them). */
