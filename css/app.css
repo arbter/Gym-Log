@@ -10,11 +10,15 @@
   }
 }
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-html { background: var(--bg); }
+/* Keep every page at least full-screen tall. On iPhone a fixed bottom bar is
+   placed wrongly (floats or drops off-screen) when the page is shorter than the
+   screen, which is why short tabs like Workouts and Photos misbehaved. */
+html { background: var(--bg); min-height: 100%; min-height: calc(100% + env(safe-area-inset-top)); }
 body {
   margin: 0; background: var(--bg); color: var(--text);
   font: 16px/1.4 -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
   -webkit-text-size-adjust: 100%;
+  min-height: 100vh; min-height: 100lvh;
 }
 body.noscroll { overflow: hidden; }
 main { padding: calc(env(safe-area-inset-top) + 8px) 16px calc(var(--tab-h) + env(safe-area-inset-bottom) + 130px); max-width: 640px; margin: 0 auto; }
